@@ -38,8 +38,8 @@ const Services = () => {
     <section id="services" className="section bg-gray-50">
       <div className="container-custom">
         {/* Cabeçalho da seção */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-malagoli/10 text-malagoli font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8">
+          <div className="inline-block bg-malagoli/10 text-malagoli font-medium px-4 py-1.5 rounded-full text-sm mb-3">
             Nossos Serviços
           </div>
           <h2 className="section-heading">
@@ -51,24 +51,24 @@ const Services = () => {
         </div>
         
         {/* Grid de serviços */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <div 
               key={service.id} 
-              className="bg-white rounded-lg p-8 border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-300 transform hover:scale-[1.02] opacity-0 animate-fade-in"
+              className="bg-white rounded-lg p-6 border border-gray-100 shadow-sm hover:shadow-md hover:border-gray-200 transition-all duration-300 transform hover:scale-[1.02] opacity-0 animate-fade-in"
               style={{ animationDelay: service.delay }}
             >
-              <div className="bg-malagoli/10 p-4 rounded-lg inline-block mb-5">
-                <service.icon className="text-malagoli" size={28} />
+              <div className="bg-malagoli/10 p-3 rounded-lg inline-block mb-4">
+                <service.icon className="text-malagoli" size={24} />
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900">{service.title}</h3>
               <p className="text-gray-600">{service.description}</p>
             </div>
           ))}
         </div>
         
         {/* CTA */}
-        <div className="mt-16 text-center">
+        <div className="mt-10 text-center">
           <a 
             href="https://shopee.com.br/malagoliscolecionaveis" 
             target="_blank" 
