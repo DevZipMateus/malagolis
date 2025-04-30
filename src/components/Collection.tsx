@@ -25,27 +25,6 @@ const categories = [
     description: 'Personagens de filmes, séries e animes em forma de estatuetas colecionáveis.',
     image: 'https://images.unsplash.com/photo-1608278047522-58806a6ac85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     delay: '0.2s'
-  },
-  {
-    id: 4,
-    name: 'Chaveiros',
-    description: 'Pequenos itens colecionáveis para levar seus personagens favoritos sempre com você.',
-    image: 'https://images.unsplash.com/photo-1611225337530-a6e8939f38a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    delay: '0.3s'
-  },
-  {
-    id: 5,
-    name: 'Cards',
-    description: 'Cartões colecionáveis de diversas franquias e personagens.',
-    image: 'https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    delay: '0.4s'
-  },
-  {
-    id: 6,
-    name: 'Brinquedos Antigos',
-    description: 'Peças nostálgicas que relembram a infância de várias gerações.',
-    image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    delay: '0.5s'
   }
 ];
 
