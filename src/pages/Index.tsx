@@ -3,16 +3,14 @@ import React, { useEffect } from 'react';
 import Header from '../components/Layout/Header';
 import Footer from '../components/Layout/Footer';
 import Hero from '../components/Hero';
+import About from '../components/About';
 import Services from '../components/Services';
-import AboutUs from '../components/AboutUs';
-import Team from '../components/Team';
-import Plans from '../components/Plans';
-import Testimonials from '../components/Testimonials';
+import Collection from '../components/Collection';
 import Contact from '../components/Contact';
-import FloatingButton from '../components/FloatingButton';
+import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 const Index = () => {
-  // Scroll to top on page load
+  // Rolar para o topo ao carregar a página
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -23,16 +21,14 @@ const Index = () => {
       
       <main className="flex-grow">
         <Hero />
+        <About />
         <Services />
-        <AboutUs />
-        <Team />
-        <Plans />
-        <Testimonials />
+        <Collection />
         <Contact />
       </main>
       
       <Footer />
-      <FloatingButton />
+      <FloatingWhatsApp />
     </div>
   );
 };

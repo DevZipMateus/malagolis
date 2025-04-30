@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -6,115 +7,146 @@ const Contact = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section id="contact" className="section bg-neutral-100">
+    <section id="contact" className="section bg-gray-50">
       <div className="container-custom">
-        {/* Section Header */}
+        {/* Cabeçalho da seção */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-block bg-amber-100 text-amber-600 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-malagoli/10 text-malagoli font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Contato
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
+          <h2 className="section-heading">
             Entre em contato conosco
           </h2>
-          <p className="text-neutral-600 text-lg">
-            Estamos prontos para atender às suas necessidades através dos nossos canais de atendimento.
+          <p className="text-gray-600 text-lg">
+            Estamos prontos para atender às suas dúvidas e necessidades relacionadas aos nossos colecionáveis.
           </p>
         </div>
         
-        {/* Contact Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          {/* WhatsApp Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in">
-            <div className="bg-emerald-500 p-6 flex items-center justify-center">
-              <img 
-                src="/lovable-uploads/1fa16bc1-908d-4a63-9c7f-88a25f117f80.png" 
-                alt="WhatsApp" 
-                className="w-16 h-16"
-              />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">WhatsApp</h3>
-              <p className="text-neutral-600 mb-4">Atendimento rápido e prático</p>
-              <a 
-                href="https://wa.me/5511987654321" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>Enviar mensagem</span>
-              </a>
+        {/* Formulário e Informações */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Informações de Contato */}
+          <div className="rounded-lg bg-white p-8 shadow-sm">
+            <h3 className="text-2xl font-semibold mb-6 text-gray-900">Informações de Contato</h3>
+            
+            <div className="space-y-6">
+              {/* Responsável */}
+              <div className="flex items-start">
+                <div className="bg-malagoli-orange/20 p-3 rounded-full mr-4 flex-shrink-0">
+                  <img
+                    src="/lovable-uploads/dc4c9a67-5595-4cde-84fc-a89434bc1ac5.png"
+                    alt="Logo"
+                    className="w-6 h-6 object-contain"
+                  />
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium text-gray-900 mb-1">Responsável</h4>
+                  <p className="text-gray-600">Paulo Cezar Viana (Pece Viana)</p>
+                </div>
+              </div>
+              
+              {/* Telefone */}
+              <div className="flex items-start">
+                <div className="bg-malagoli/10 p-3 rounded-full mr-4 flex-shrink-0">
+                  <Phone className="text-malagoli" size={20} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium text-gray-900 mb-1">Telefone / WhatsApp</h4>
+                  <a 
+                    href="tel:+5548991358069" 
+                    className="text-gray-600 hover:text-malagoli transition-colors"
+                  >
+                    (48) 99135-8069
+                  </a>
+                </div>
+              </div>
+              
+              {/* Email */}
+              <div className="flex items-start">
+                <div className="bg-malagoli/10 p-3 rounded-full mr-4 flex-shrink-0">
+                  <Mail className="text-malagoli" size={20} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium text-gray-900 mb-1">E-mail</h4>
+                  <a 
+                    href="mailto:peceviana@hotmail.com" 
+                    className="text-gray-600 hover:text-malagoli transition-colors"
+                  >
+                    peceviana@hotmail.com
+                  </a>
+                </div>
+              </div>
+              
+              {/* Endereço */}
+              <div className="flex items-start">
+                <div className="bg-malagoli/10 p-3 rounded-full mr-4 flex-shrink-0">
+                  <MapPin className="text-malagoli" size={20} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium text-gray-900 mb-1">Endereço</h4>
+                  <p className="text-gray-600">
+                    Rua Prof. Maria do Carmo Souza, 10 / 303B<br />
+                    Bairro Campinas – São José – SC<br />
+                    CEP 88101-360
+                  </p>
+                </div>
+              </div>
+              
+              {/* Redes Sociais */}
+              <div>
+                <h4 className="text-lg font-medium text-gray-900 mb-3">Redes Sociais</h4>
+                <div className="flex space-x-3">
+                  <a 
+                    href="https://www.instagram.com/malagoliscolecionaveis" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-malagoli/10 hover:bg-malagoli/20 p-3 rounded-full text-malagoli transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/malagoliscolecionaveis" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-malagoli/10 hover:bg-malagoli/20 p-3 rounded-full text-malagoli transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </a>
+                  <a 
+                    href="https://shopee.com.br/malagoliscolecionaveis" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-malagoli/10 hover:bg-malagoli/20 p-3 rounded-full text-malagoli transition-colors"
+                    aria-label="Shopee"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           
-          {/* Phone Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <div className="bg-amber-400 p-6 flex items-center justify-center">
-              <Phone className="w-16 h-16 text-white" />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">Telefone</h3>
-              <p className="text-neutral-600 mb-4">Fale diretamente conosco</p>
-              <a 
-                href="tel:+5511987654321"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>(11) 98765-4321</span>
-              </a>
-            </div>
-          </div>
-          
-          {/* Email Card */}
-          <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-neutral-800 p-6 flex items-center justify-center">
-              <Mail className="w-16 h-16 text-amber-400" />
-            </div>
-            <div className="p-6 text-center">
-              <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
-              <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
-              <a 
-                href="mailto:contato@contabilidade.com"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
-              >
-                <span>contato@contabilidade.com</span>
-              </a>
-            </div>
+          {/* Mapa */}
+          <div className="h-[400px] rounded-lg overflow-hidden shadow-sm">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.724987806652!2d-48.61566092497987!3d-27.590477676845647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9527391e295452f9%3A0xb90eeb834891374e!2sR.%20Prof.%20Maria%20do%20Carmo%20de%20Souza%2C%2010%20-%20Campinas%2C%20S%C3%A3o%20Jos%C3%A9%20-%20SC%2C%2088101-360!5e0!3m2!1spt-BR!2sbr!4v1681579046650!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização Malagoli's Colecionáveis"
+            ></iframe>
           </div>
         </div>
         
-        {/* Address and Hours Card */}
-        <div className="mt-12 bg-white rounded-xl shadow-sm p-8 max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Address */}
-            <div className="flex items-start">
-              <div className="bg-neutral-100 p-3 rounded-full mr-4 flex-shrink-0">
-                <MapPin className="text-neutral-700" size={24} />
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço</h4>
-                <p className="text-neutral-600">Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100</p>
-              </div>
-            </div>
-            
-            {/* Working Hours */}
-            <div>
-              <h4 className="text-lg font-semibold text-neutral-900 mb-4">Horário de Atendimento</h4>
-              
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="text-neutral-600">Segunda - Sexta:</span>
-                  <span className="font-medium text-neutral-900">08:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-600">Sábado:</span>
-                  <span className="font-medium text-neutral-900">09:00 - 13:00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-neutral-600">Domingo:</span>
-                  <span className="font-medium text-neutral-900">Fechado</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        {/* Slogan */}
+        <div className="mt-12 text-center">
+          <p className="text-xl text-malagoli italic">
+            "A nostalgia preserva nossa mais linda essência"
+          </p>
         </div>
       </div>
     </section>
