@@ -50,7 +50,7 @@ const Footer = () => {
                   href="https://shopee.com.br/malagoliscolecionaveis" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="text-gray-300 hover:text-malagoli-light transition-colors duration-300 inline-block"
+                  className="text-gray-300 hover:text-malagoli-light transition-colors duration-300 inline-block font-medium"
                 >
                   Loja Shopee
                 </a>

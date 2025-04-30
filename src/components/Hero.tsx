@@ -33,9 +33,9 @@ const Hero = () => {
                 href="https://shopee.com.br/malagoliscolecionaveis" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="btn-primary"
+                className="btn-primary flex items-center justify-center group"
               >
-                <ShoppingBag className="mr-2" size={18} />
+                <ShoppingBag className="mr-2 group-hover:animate-bounce" size={20} />
                 <span>Comprar na Shopee</span>
               </a>
               <a href="#contact" className="btn-secondary">

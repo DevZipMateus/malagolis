@@ -56,7 +56,7 @@ const Header = () => {
             {/* Social Media */}
             <div className="flex items-center ml-6 space-x-3">
               <a 
-                href="https://www.instagram.com/malagoliscolecionaveis" 
+                href="https://www.instagram.com/malagolis_colecionaveis/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-malagoli transition-colors"
@@ -65,7 +65,7 @@ const Header = () => {
                 <Instagram size={20} />
               </a>
               <a 
-                href="https://www.facebook.com/malagoliscolecionaveis" 
+                href="https://www.facebook.com/profile.php?id=100005736676752" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-malagoli transition-colors"
@@ -77,7 +77,7 @@ const Header = () => {
                 href="https://shopee.com.br/malagoliscolecionaveis" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-gray-600 hover:text-malagoli transition-colors"
+                className="text-gray-600 hover:text-malagoli transition-colors font-medium"
                 aria-label="Shopee"
               >
                 <ShoppingBag size={20} />
@@ -112,7 +112,7 @@ const Header = () => {
           {/* Social Media */}
           <div className="flex items-center space-x-4 px-4 py-2">
             <a 
-              href="https://www.instagram.com/malagoliscolecionaveis" 
+              href="https://www.instagram.com/malagolis_colecionaveis/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-malagoli transition-colors"
@@ -121,7 +121,7 @@ const Header = () => {
               <Instagram size={20} />
             </a>
             <a 
-              href="https://www.facebook.com/malagoliscolecionaveis" 
+              href="https://www.facebook.com/profile.php?id=100005736676752" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-malagoli transition-colors"
@@ -133,7 +133,7 @@ const Header = () => {
               href="https://shopee.com.br/malagoliscolecionaveis" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-600 hover:text-malagoli transition-colors"
+              className="text-gray-600 hover:text-malagoli transition-colors font-medium"
               aria-label="Shopee"
             >
               <ShoppingBag size={20} />

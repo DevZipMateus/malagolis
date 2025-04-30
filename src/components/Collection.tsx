@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
+import { ShoppingBag } from 'lucide-react';
 
 const categories = [
   {
@@ -64,6 +65,14 @@ const Collection = () => {
           <p className="section-subheading">
             Trabalhamos com diversas categorias de colecionáveis para todos os tipos de colecionadores, com foco especial em gibis e miniaturas.
           </p>
+          
+          {/* Shopee Banner */}
+          <div className="mt-8 bg-malagoli-light/20 p-4 rounded-md inline-flex items-center justify-center">
+            <ShoppingBag className="text-malagoli mr-2" size={24} />
+            <span className="text-gray-800">
+              Compre agora em nossa <a href="https://shopee.com.br/malagoliscolecionaveis" target="_blank" rel="noopener noreferrer" className="text-malagoli font-semibold hover:underline">loja na Shopee</a>
+            </span>
+          </div>
         </div>
         
         {/* Grid de categorias */}
@@ -92,9 +101,10 @@ const Collection = () => {
                   href="https://shopee.com.br/malagoliscolecionaveis" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="inline-block mt-4 text-malagoli font-medium hover:text-malagoli-dark transition-colors"
+                  className="inline-flex items-center mt-4 text-malagoli font-medium hover:text-malagoli-dark transition-colors group"
                 >
-                  Ver na loja →
+                  <span>Ver na Shopee</span>
+                  <ShoppingBag className="ml-2 group-hover:translate-x-1 transition-transform" size={16} />
                 </a>
               </div>
             </div>
@@ -111,9 +121,20 @@ const Collection = () => {
               <p className="text-gray-700 mb-4">
                 Temos interesse em comprar coleções completas! Entre em contato conosco e faça uma avaliação justa dos seus itens colecionáveis.
               </p>
-              <a href="#contact" className="btn-primary">
-                Fale conosco
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" className="btn-primary">
+                  Fale conosco
+                </a>
+                <a 
+                  href="https://shopee.com.br/malagoliscolecionaveis" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-secondary flex items-center justify-center"
+                >
+                  <ShoppingBag className="mr-2" size={18} />
+                  <span>Visite nossa loja</span>
+                </a>
+              </div>
             </div>
             <div className="md:w-4/12">
               <img 

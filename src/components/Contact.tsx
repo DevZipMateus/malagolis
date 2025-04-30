@@ -96,7 +96,7 @@ const Contact = () => {
                 <h4 className="text-lg font-medium text-gray-900 mb-3">Redes Sociais</h4>
                 <div className="flex space-x-3">
                   <a 
-                    href="https://www.instagram.com/malagoliscolecionaveis" 
+                    href="https://www.instagram.com/malagolis_colecionaveis/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-malagoli/10 hover:bg-malagoli/20 p-3 rounded-full text-malagoli transition-colors"
@@ -105,7 +105,7 @@ const Contact = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                   </a>
                   <a 
-                    href="https://www.facebook.com/malagoliscolecionaveis" 
+                    href="https://www.facebook.com/profile.php?id=100005736676752" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-malagoli/10 hover:bg-malagoli/20 p-3 rounded-full text-malagoli transition-colors"
