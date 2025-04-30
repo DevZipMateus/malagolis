@@ -7,7 +7,7 @@ const Hero = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="pt-20 md:pt-28 pb-8 md:pb-12 bg-gradient-to-br from-white to-malagoli-light/10 relative overflow-hidden">
+    <section className="pt-16 md:pt-24 pb-6 md:pb-8 bg-gradient-to-br from-white to-malagoli-light/10 relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity-5"></div>
       
       {/* Elementos decorativos */}
@@ -18,17 +18,18 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           {/* Conteúdo */}
           <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0 text-center md:text-left">
-            <h1 className={`font-bold text-gray-900 leading-tight mb-4 opacity-0 animate-fade-in ${
+            <h1 className={`font-bold text-gray-900 leading-tight mb-4 ${
               isMobile ? 'text-3xl' : 'text-4xl md:text-5xl lg:text-6xl'
-            }`}>
-              <span className="text-malagoli">Colecionáveis</span> que despertam nostalgia e paixão
+            } block`}>
+              <span className="text-malagoli">Colecionáveis</span>{" "}
+              <span>que despertam nostalgia e paixão</span>
             </h1>
             
-            <p className="text-lg text-gray-700 mb-6 max-w-lg mx-auto md:mx-0 opacity-0 animate-fade-in-delay-1">
+            <p className="text-lg text-gray-700 mb-6 max-w-lg mx-auto md:mx-0 opacity-100 animate-fade-in-delay-1">
               Gibis, miniaturas diecast, figuras de ação e muito mais. Desde 2012 preservando histórias e memórias através de itens colecionáveis.
             </p>
             
-            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 opacity-0 animate-fade-in-delay-2">
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 opacity-100 animate-fade-in-delay-2">
               <a 
                 href="https://shopee.com.br/malagoliscolecionaveis" 
                 target="_blank" 
@@ -43,13 +44,13 @@ const Hero = () => {
               </a>
             </div>
             
-            <p className="text-malagoli-dark/80 mt-4 italic text-sm opacity-0 animate-fade-in-delay-3">
+            <p className="text-malagoli-dark/80 mt-4 italic text-sm opacity-100 animate-fade-in-delay-3">
               "A nostalgia preserva nossa mais linda essência"
             </p>
           </div>
           
           {/* Imagem */}
-          <div className="md:w-1/2 opacity-0 animate-fade-in-delay-1">
+          <div className="md:w-1/2 opacity-100 animate-fade-in-delay-1">
             <div className="relative">
               <div className="bg-malagoli/20 w-full h-full absolute -left-4 -top-4 rounded-lg"></div>
               <img 

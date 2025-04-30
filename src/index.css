@@ -64,7 +64,7 @@
 
   /* Seções padrão - reduzido o padding vertical */
   .section {
-    @apply py-8 md:py-12;
+    @apply py-6 md:py-10;
   }
 
   /* Botão primário */
@@ -106,4 +106,12 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
   }
+}
+
+/* Ensure animations don't hide content by default */
+.animate-fade-in,
+.animate-fade-in-delay-1,
+.animate-fade-in-delay-2,
+.animate-fade-in-delay-3 {
+  opacity: 1 !important;
 }
