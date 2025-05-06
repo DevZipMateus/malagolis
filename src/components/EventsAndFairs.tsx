@@ -28,7 +28,7 @@ const EventsAndFairs = () => {
       alt: "Produtos Malagoli's em exibição"
     },
     {
-      src: "/lovable-uploads/Organizamos Feiras de Colecionáveis na Grande Florianópolis.jpeg",
+      src: "/lovable-uploads/1185894869998319.jpeg",
       alt: "Organização de Feira de Colecionáveis"
     }
   ];
