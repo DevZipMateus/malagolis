@@ -8,28 +8,28 @@ const categories = [
     id: 1,
     name: 'Gibis de Luxo',
     description: 'Variadas edições de histórias em quadrinhos, desde clássicos aos mais recentes.',
-    image: '/lovable-uploads/Gibis de Luxo.jpeg',
+    image: '/lovable-uploads/gibisluxo.jpeg',
     delay: '0s'
   }, 
   {
     id: 2,
     name: 'Velozes e Furiosos',
     description: 'Colecionáveis exclusivos da famosa franquia de filmes de ação.',
-    image: '/lovable-uploads/Velozes e Furiosos.jpeg',
+    image: '/lovable-uploads/velozesefuriosos.jpeg',
     delay: '0.1s'
   }, 
   {
     id: 3,
     name: 'Brinquedos Antigos',
     description: 'Itens nostálgicos que marcaram época e se tornaram peças valiosas de coleção.',
-    image: '/lovable-uploads/Brinquedos Antigos.jpeg',
+    image: '/lovable-uploads/brinquedosantigos.jpeg',
     delay: '0.2s'
   },
   {
     id: 4,
     name: 'Miniaturas Premium',
     description: 'Modelos detalhados e de alta qualidade para colecionadores exigentes.',
-    image: '/lovable-uploads/Miniaturas Premium.jpeg',
+    image: '/lovable-uploads/miniaturaspremium.jpeg',
     delay: '0.3s'
   }
 ];
