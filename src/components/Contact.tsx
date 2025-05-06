@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -40,7 +39,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-base font-medium text-gray-900 mb-0">Responsável</h4>
-                  <p className="text-gray-600">Paulo Cezar Viana (Pece Viana)</p>
+                  <p className="text-gray-600">Pece e Adriana</p>
                 </div>
               </div>
               
@@ -68,10 +67,10 @@ const Contact = () => {
                 <div>
                   <h4 className="text-base font-medium text-gray-900 mb-0">E-mail</h4>
                   <a 
-                    href="mailto:peceviana@hotmail.com" 
+                    href="mailto:malagoliscolecionaveis@gmail.com" 
                     className="text-gray-600 hover:text-malagoli transition-colors"
                   >
-                    peceviana@hotmail.com
+                    malagoliscolecionaveis@gmail.com
                   </a>
                 </div>
               </div>
