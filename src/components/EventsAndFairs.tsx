@@ -30,8 +30,8 @@ const EventsAndFairs = () => {
     {
       src: "/lovable-uploads/1185894869998319.jpeg",
       alt: "Organização de Feira de Colecionáveis"
-    }
-        {
+    },
+    {
       src: "/lovable-uploads/1841760806680166.jpeg",
       alt: "Nossa stand na Feira de Colecionáveis"
     }
