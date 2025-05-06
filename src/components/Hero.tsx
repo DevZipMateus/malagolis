@@ -26,7 +26,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-lg text-gray-700 mb-6 max-w-lg mx-auto md:mx-0 opacity-100 animate-fade-in-delay-1">
-              Gibis, miniaturas diecast, figuras de ação e muito mais. Desde 2012 preservando histórias e memórias através de itens colecionáveis.
+              <strong>Gibis raros</strong>, <strong>gibis antigos</strong>, miniaturas diecast, figuras de ação e muito mais. Desde 2012 preservando histórias e memórias através de itens colecionáveis únicos.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 opacity-100 animate-fade-in-delay-2">
@@ -55,7 +55,7 @@ const Hero = () => {
               <div className="bg-malagoli/20 w-full h-full absolute -left-4 -top-4 rounded-lg"></div>
               <img 
                 src="/lovable-uploads/dc4c9a67-5595-4cde-84fc-a89434bc1ac5.png" 
-                alt="Malagoli's Colecionáveis" 
+                alt="Malagoli's Colecionáveis - Gibis raros e antigos, miniaturas e colecionáveis" 
                 className="relative z-10 rounded-lg shadow-lg w-full"
               />
             </div>

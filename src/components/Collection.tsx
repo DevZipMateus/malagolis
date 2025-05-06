@@ -1,15 +1,16 @@
 
 import React from 'react';
 import { useIsMobile } from '../hooks/use-mobile';
-import { ShoppingBag } from 'lucide-react';
+import { ShoppingBag, BookOpen, Award, Clock } from 'lucide-react';
 
 const categories = [
   {
     id: 1,
-    name: 'Gibis de Luxo',
-    description: 'Variadas edições de histórias em quadrinhos, desde clássicos aos mais recentes.',
+    name: 'Gibis Raros e Antigos',
+    description: 'Edições valiosas e históricas de gibis antigos e raros, verdadeiras relíquias para colecionadores.',
     image: '/lovable-uploads/gibisluxo.jpeg',
-    delay: '0s'
+    delay: '0s',
+    keywords: ['gibis raros', 'gibis antigos', 'edições especiais', 'histórias em quadrinhos']
   }, 
   {
     id: 2,
@@ -46,10 +47,10 @@ const Collection = () => {
             Nossos Colecionáveis
           </div>
           <h2 className="section-heading">
-            Descubra nossa variedade de itens
+            Descubra nossa variedade de itens colecionáveis
           </h2>
           <p className="section-subheading">
-            Trabalhamos com diversas categorias de colecionáveis para todos os tipos de colecionadores, com foco especial em gibis e miniaturas.
+            Trabalhamos com diversas categorias de colecionáveis, com destaque para nossos gibis raros e antigos, miniaturas e brinquedos que preservam histórias e despertam nostalgia.
           </p>
           
           {/* Shopee Banner */}
@@ -73,7 +74,7 @@ const Collection = () => {
               <div className="relative h-64 overflow-hidden">
                 <img 
                   src={category.image} 
-                  alt={category.name} 
+                  alt={category.name + " - Malagoli's Colecionáveis"} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-80"></div>
@@ -97,16 +98,59 @@ const Collection = () => {
           ))}
         </div>
         
-        {/* Destaque */}
+        {/* Seção de destaque para Gibis Raros e Antigos - Nova seção para SEO */}
         <div className="mt-16 bg-gradient-to-br from-malagoli-light/30 to-malagoli/10 rounded-2xl p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-7/12 mb-8 md:mb-0">
               <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
-                Precisa vender sua coleção?
+                Especialistas em Gibis Raros e Antigos
               </h3>
               <p className="text-gray-700 mb-4">
-                Temos interesse em comprar coleções completas! Entre em contato conosco e faça uma avaliação justa dos seus itens colecionáveis.
+                Nossa coleção de gibis raros e antigos inclui edições especiais, primeiras aparições de personagens icônicos, e exemplares que marcaram a história dos quadrinhos no Brasil e no mundo.
               </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="flex items-start">
+                  <div className="bg-malagoli/10 p-2 rounded-full mr-3">
+                    <Award className="text-malagoli" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Gibis Raros</h4>
+                    <p className="text-sm text-gray-600">Edições limitadas e de difícil acesso no mercado</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-malagoli/10 p-2 rounded-full mr-3">
+                    <Clock className="text-malagoli" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Gibis Antigos</h4>
+                    <p className="text-sm text-gray-600">Exemplares preservados das décadas de 60, 70 e 80</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-malagoli/10 p-2 rounded-full mr-3">
+                    <BookOpen className="text-malagoli" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Títulos Clássicos</h4>
+                    <p className="text-sm text-gray-600">Marvel, DC, Turma da Mônica e muito mais</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-malagoli/10 p-2 rounded-full mr-3">
+                    <ShoppingBag className="text-malagoli" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold">Compra e Venda</h4>
+                    <p className="text-sm text-gray-600">Avaliamos sua coleção pelo valor justo de mercado</p>
+                  </div>
+                </div>
+              </div>
+              
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href="#contact" className="btn-primary">
                   Fale conosco
@@ -119,14 +163,35 @@ const Collection = () => {
             </div>
             <div className="md:w-4/12">
               <img 
-                src={isMobile ? "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" : "https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} 
-                alt="Coleção de itens" 
+                src="/lovable-uploads/gibisluxo.jpeg" 
+                alt="Coleção de Gibis Raros e Antigos - Malagoli's Colecionáveis" 
                 className="rounded-lg shadow-lg" 
               />
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Schema.org structured data for collectibles */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Coleção de Gibis Raros e Antigos - Malagoli's Colecionáveis",
+          "description": "Explore nossa coleção de gibis raros e antigos, miniaturas e colecionáveis exclusivos.",
+          "offers": {
+            "@type": "AggregateOffer",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Gibis Raros e Antigos",
+                "description": "Edições valiosas e históricas de gibis antigos e raros, verdadeiras relíquias para colecionadores.",
+                "availability": "https://schema.org/InStock"
+              }
+            ]
+          }
+        })
+      }} />
     </section>
   );
 };
