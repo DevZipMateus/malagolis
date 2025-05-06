@@ -43,6 +43,9 @@ const Footer = () => {
                 <a href="#collection" className="text-gray-300 hover:text-malagoli-light transition-colors duration-300 inline-block">Colecionáveis</a>
               </li>
               <li>
+                <a href="#events" className="text-gray-300 hover:text-malagoli-light transition-colors duration-300 inline-block">Eventos e Feiras</a>
+              </li>
+              <li>
                 <a href="#contact" className="text-gray-300 hover:text-malagoli-light transition-colors duration-300 inline-block">Contato</a>
               </li>
               <li>

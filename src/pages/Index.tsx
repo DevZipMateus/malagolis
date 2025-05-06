@@ -7,6 +7,7 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Collection from '../components/Collection';
 import Contact from '../components/Contact';
+import EventsAndFairs from '../components/EventsAndFairs';
 import FloatingWhatsApp from '../components/FloatingWhatsApp';
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
         <About />
         <Services />
         <Collection />
+        <EventsAndFairs />
         <Contact />
       </main>
       
